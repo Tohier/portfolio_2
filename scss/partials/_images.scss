@@ -1,0 +1,70 @@
+header .logo {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    transition: 1s;
+}
+
+header.scrolled .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+header img.banner {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+header.scrolled img.banner {
+    opacity: 0;
+}
+
+header .logo img {
+    width: 20rem;
+    transition: 1s;
+}
+
+header.scrolled .logo img {
+    width: 8.25rem;
+}
+
+img.me {
+    padding-top: 160px;
+    padding-left: 350px;
+}
+
+#front {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 200px;
+    left: 500px;
+}
+
+#right {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    animation:right 1s ease;
+    opacity: 1;
+    transform: scale(.8);
+}
+
+#left {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    animation:left 1s ease;
+    opacity: 1;
+    transform: scale(.8);
+}

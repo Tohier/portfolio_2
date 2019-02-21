@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   padding: 0;
   min-height: 62.5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Righteous', cursive;
   padding-top: 100px; }
 
 header {
@@ -16,36 +19,6 @@ header {
 
 header.scrolled {
   height: 100px; }
-
-header .logo {
-  position: absolute;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
-  transition: 1s; }
-
-header.scrolled .logo {
-  position: relative;
-  top: 0;
-  left: 0; }
-
-header img.banner {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transition: 1s; }
-
-header.scrolled img.banner {
-  opacity: 0; }
-
-header .logo img {
-  width: 20rem;
-  transition: 1s; }
-
-header.scrolled .logo img {
-  width: 8.25rem; }
 
 nav {
   position: relative;
@@ -79,23 +52,82 @@ nav ul li a.active {
   color: #262626; }
 
 section {
-  padding: 100px;
+  padding-top: 100px;
   box-sizing: border-box;
   border-bottom: 2px solid black; }
+  section h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 48px; }
+  section p {
+    font-size: 18px; }
 
-section h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 48px; }
+header .logo {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  transition: 1s; }
 
-section p {
-  font-size: 18px; }
+header.scrolled .logo {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+header img.banner {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 1s; }
+
+header.scrolled img.banner {
+  opacity: 0; }
+
+header .logo img {
+  width: 20rem;
+  transition: 1s; }
+
+header.scrolled .logo img {
+  width: 8.25rem; }
+
+img.me {
+  padding-top: 160px;
+  padding-left: 350px; }
+
+#front {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 200px;
+  left: 500px; }
+
+#right {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  animation: right 1s ease;
+  opacity: 1;
+  transform: scale(0.8); }
+
+#left {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  animation: left 1s ease;
+  opacity: 1;
+  transform: scale(0.8); }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "abt img-1" ". edu"; }
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "abt img-1" ". edu" "skills ." "pro pro "; }
 
 .about {
   grid-area: abt; }
@@ -105,5 +137,11 @@ section p {
 
 .edu {
   grid-area: edu; }
+
+.skills {
+  grid-area: skills; }
+
+.pro {
+  grid-area: pro; }
 
 /*# sourceMappingURL=main.css.map */
