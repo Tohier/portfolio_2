@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto ;
+    grid-template-areas: 
+        "abt img-1"
+        ". edu";
+
+
+}
+
+.about {
+    grid-area: abt;
+
+}
+
+.me { 
+    grid-area: img-1;
+}
+
+.edu {
+    grid-area: edu;
+}

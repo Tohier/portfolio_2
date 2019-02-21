@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <img src="images/mo.jpg" class="banner">
+        <a href="" class="logo"><img src="images/b5ff3044-a6f4-4a62-a5ad-a15315fc0d6d.png"></a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- the the jquery for the nav bar -->
+    <script>$(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0){
+            $("header").addClass('scrolled');
+        }
+        else{
+            $("header").removeClass('scrolled');
+        }
+        
+    } )
+    </script>
+    <!-- end of the jquery -->
+    
+    <div class="container">
+    <section>
+        <h2 class="a    bout">About me</h2>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo fugiat, suscipit recusandae reiciendis sapiente corrupti, repudiandae sed voluptatum aspernatur, soluta labore totam cupiditate obcaecati omnis ducimus tempora id ut!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam repellendus, doloribus molestiae optio eius? Sit accusantium obcaecati doloribus quasi! Quasi ullam doloremque provident temporibus assumenda, excepturi hic ut illo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos veritatis eos, vitae ratione laboriosam eum quia, quod itaque enim error asperiores mollitia dolores reiciendis sint nulla doloremque, blanditiis sapiente quas.</p></section>
+
+            <img src="" class="me">
+
+    
+     <section class="edu">
+        <h2>Education</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo fugiat, suscipit recusandae reiciendis sapiente corrupti, repudiandae sed voluptatum aspernatur, soluta labore totam cupiditate obcaecati omnis ducimus tempora id ut!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam repellendus, doloribus molestiae optio eius? Sit accusantium obcaecati doloribus quasi! Quasi ullam doloremque provident temporibus assumenda, excepturi hic ut illo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos veritatis eos, vitae ratione laboriosam eum quia, quod itaque enim error asperiores mollitia dolores reiciendis sint nulla doloremque, blanditiis sapiente quas.</p></section>
+    
+    </div>
+</body>
+</html>
