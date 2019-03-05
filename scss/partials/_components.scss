@@ -26,10 +26,18 @@ nav ul li a {
     color: white;
     padding: 10px 15px;
     text-decoration: none;
+
+
+}
+nav ul li a:hover {
+    font-size: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: ease-in 250ms;
 }
 nav ul li a.active {
     background: #fff;
-    color: #262626;
+    color: #000000;
 }
 
 section {

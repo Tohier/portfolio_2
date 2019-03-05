@@ -1,34 +1,91 @@
+// .container {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: repeat(5,auto);
+//     grid-template-areas: 
+//         "abt . img-1"
+//         ". edu"
+//         "skills ."
+//         "pro pro";
+
+
+// }
+
+// .about {
+//     grid-area: abt;
+
+// }
+
+// .me { 
+//     grid-area: img-1;
+// }
+
+// .edu {
+//     grid-area: edu;
+// }
+
+// .skills {
+//     grid-area: skills;
+// }
+
+// .pro {
+//     grid-area: pro;
+
+//     display: grid;
+//     grid-template: 
+//         "project" auto;
+// }
+
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,auto);
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
-        "abt img-1"
-        ". edu"
-        "skills ."
-        "pro pro ";
+    "abt img"
+    ". edu"
+    "skills ."
+    "pro pro";
 
 
+    #aboutme {
+        grid-area: abt;
+    }
 
-}
+    .me {
+        grid-area: img;
+    }
 
-.about {
-    grid-area: abt;
+    .edu {
+        grid-area: edu;
+    }
 
-}
+    .skills {
+        grid-area: skills;
+    }
 
-.me { 
-    grid-area: img-1;
-}
+    .pro {
+        grid-area: pro;
 
-.edu {
-    grid-area: edu;
-}
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas:
+        "txt txt txt" 
+        "img1 img2 img3";
 
-.skills {
-    grid-area: skills;
-}
+    .text-intro {
+        grid-area: txt;
+    }
 
-.pro {
-    grid-area: pro;
+    .project1 {
+        grid-area: img1;
+    }
+    .project2 {
+        grid-area: img2;
+    }
+    .project3 {
+        grid-area: img3;
+    }
+    }
 }

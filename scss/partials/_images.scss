@@ -28,6 +28,7 @@ header.scrolled img.banner {
 header .logo img {
     width: 20rem;
     transition: 1s;
+   
 }
 
 header.scrolled .logo img {
@@ -39,32 +40,112 @@ img.me {
     padding-left: 350px;
 }
 
-#front {
-    width: 250px;
-    height: 250px;
-    position: relative;
-    top: 200px;
-    left: 500px;
-}
+// the code for the projects
 
-#right {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 200px;
-    left: 250px;
-    animation:right 1s ease;
-    opacity: 1;
-    transform: scale(.8);
+.fig {
+	background-color: #000;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 10px;
+	max-width: 	80%;
+	min-width: 80%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 100%;
 }
-
-#left {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 200px;
-    left: 250px;
-    animation:left 1s ease;
-    opacity: 1;
-    transform: scale(.8);
+  
+.fig * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
 }
+  
+.fig:before,
+.fig:after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+	background-color: #000000;
+	border-left: 3px solid #fff;
+	border-right: 3px solid #fff;
+	content: '';
+	opacity: 0.9;
+	z-index: 1;
+}
+  
+.fig:before {
+	-webkit-transform: skew(45deg) translateX(-155%);
+	transform: skew(45deg) translateX(-155%);
+}
+  
+.fig:after {
+	-webkit-transform: skew(45deg) translateX(155%);
+	transform: skew(45deg) translateX(155%);
+}
+  
+.fig img {
+	backface-visibility: hidden;
+	max-width: 100%;
+	vertical-align: top;
+}
+  
+.fig figcaption {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	z-index: 2;
+	-webkit-transform: translate(-50%, -50%) scale(0.5);
+	transform: translate(-50%, -50%) scale(0.5);
+	opacity: 0;
+	-webkit-box-shadow: 0 0 10px #000000;
+	box-shadow: 0 0 10px #000000;
+}
+  
+.fig h3 {
+	background-color: #000000;
+	border: 2px solid #fff;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 5px 10px;
+	text-transform: uppercase;
+  }
+  
+.fig a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+  }
+  
+  
+.fig:hover:before,
+.fig.hover:hover:before {
+	-webkit-transform: skew(45deg) translateX(-55%);
+	transform: skew(45deg) translateX(-55%);
+  }
+  
+.fig:hover:after,
+.fig.hover:hover:after {
+	-webkit-transform: skew(45deg) translateX(55%);
+	transform: skew(45deg) translateX(55%);
+}
+  
+.fig:hover figcaption,
+.fig.hover:hover figcaption {
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+  
