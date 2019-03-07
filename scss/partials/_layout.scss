@@ -1,91 +1,59 @@
-// .container {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: repeat(5,auto);
-//     grid-template-areas: 
-//         "abt . img-1"
-//         ". edu"
-//         "skills ."
-//         "pro pro";
-
-
-// }
-
-// .about {
-//     grid-area: abt;
-
-// }
-
-// .me { 
-//     grid-area: img-1;
-// }
-
-// .edu {
-//     grid-area: edu;
-// }
-
-// .skills {
-//     grid-area: skills;
-// }
-
-// .pro {
-//     grid-area: pro;
-
-//     display: grid;
-//     grid-template: 
-//         "project" auto;
-// }
-
-
 .container {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: 
     "abt img"
-    ". edu"
+    "edu edu"
     "skills ."
-    "pro pro";
+    "pro pro"
+    "con con";
 
 
-    #aboutme {
+#aboutme {
         grid-area: abt;
     }
 
-    .me {
+.me {
         grid-area: img;
     }
 
-    .edu {
+.edu {
         grid-area: edu;
     }
-
-    .skills {
+.edu-timeline {
+        grid-area: etl;
+    }
+.skills {
         grid-area: skills;
     }
 
-    .pro {
-        grid-area: pro;
+.pro {
+    grid-area: pro;
 
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-areas:
-        "txt txt txt" 
-        "img1 img2 img3";
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+    "txt txt txt" 
+    "img1 img2 img3";
 
-    .text-intro {
+.text-intro {
         grid-area: txt;
     }
 
-    .project1 {
+.project1 {
         grid-area: img1;
     }
-    .project2 {
+.project2 {
         grid-area: img2;
     }
-    .project3 {
+.project3 {
         grid-area: img3;
     }
     }
+}
+
+.contact {
+    grid-area: con;
 }
