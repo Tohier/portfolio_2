@@ -172,7 +172,7 @@ nav ul li a:hover {
   transition: ease-in 250ms; }
 
 nav ul li a.active {
-  background: #fff;
+  background: white;
   color: #000000; }
 
 section {

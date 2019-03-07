@@ -31,12 +31,13 @@ nav ul li a {
 }
 nav ul li a:hover {
     font-size: 20px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
     transition: ease-in 250ms;
+    
 }
 nav ul li a.active {
-    background: #fff;
+    background: white;
     color: #000000;
 }
 
@@ -49,6 +50,7 @@ section {
         padding: 0;
         font-size: 48px;
         text-align: center;
+       
     }
     p {
         font-size: 18px;
