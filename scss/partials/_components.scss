@@ -61,6 +61,7 @@ section {
     position: relative;;
     width: 100%;
     padding-top: 5%;
+    padding-bottom: 7%;
     text-align: center;
 }
 
@@ -68,7 +69,7 @@ section {
     width: 220px;
     height: 140px;
     display: inline-block;
-    background: #ff0000;
+    background:linear-gradient(to right , rgb(0, 0, 0) 50%, rgb(255, 0, 0) 100%);    
     margin: 10px;
     color: #fff;
     position: relative;
@@ -98,4 +99,27 @@ section {
 
 .cont-method:hover i{
     transform: translateY(-40px);
+}
+
+#end{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.footer{
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(255, 0, 0) 100%);
+}
+.footer::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left top;
+  transform: skewY(-2deg);
 }

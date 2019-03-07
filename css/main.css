@@ -109,7 +109,7 @@ section#timeline article div.inner h2:after {
 section#timeline article div.inner p {
   padding: 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 100%;
   background: black;
   color: #ffffff;
   border-radius: 0 0 6px 6px; }
@@ -190,13 +190,14 @@ section {
   position: relative;
   width: 100%;
   padding-top: 5%;
+  padding-bottom: 7%;
   text-align: center; }
 
 .cont-method {
   width: 220px;
   height: 140px;
   display: inline-block;
-  background: #ff0000;
+  background: linear-gradient(to right, black 50%, red 100%);
   margin: 10px;
   color: #fff;
   position: relative;
@@ -223,6 +224,27 @@ section {
 
 .cont-method:hover i {
   transform: translateY(-40px); }
+
+#end {
+  color: white;
+  text-align: center; }
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, black 50%, red 100%); }
+
+.footer::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left top;
+  transform: skewY(-2deg); }
 
 header .logo {
   position: absolute;
@@ -286,7 +308,7 @@ img.me {
   right: 0;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #000000;
+  background: linear-gradient(to right, black 50%, red 100%);
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
   content: '';
@@ -356,7 +378,7 @@ img.me {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "abt img" "edu edu" "skills ." "pro pro" "con con"; }
+  grid-template-areas: "abt img" "edu edu" "skills skills" "pro pro" "con con" "foot foot"; }
   .container #aboutme {
     grid-area: abt; }
   .container .me {
@@ -383,5 +405,8 @@ img.me {
 
 .contact {
   grid-area: con; }
+
+.footer {
+  grid-area: foot; }
 
 /*# sourceMappingURL=main.css.map */

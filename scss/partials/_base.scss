@@ -25,7 +25,7 @@ header.scrolled {
     height: 100px;
     z-index: 99;
 }
-
+// timeline code
 
 section#timeline {
   width: 80%;
@@ -115,7 +115,7 @@ section#timeline article div.inner h2:after {
 section#timeline article div.inner p {
   padding: 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 100%;
   background: rgb(0, 0, 0);
   color: #ffffff;
   border-radius: 0 0 6px 6px;

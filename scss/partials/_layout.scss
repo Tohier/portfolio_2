@@ -6,9 +6,10 @@
     grid-template-areas: 
     "abt img"
     "edu edu"
-    "skills ."
+    "skills skills"
     "pro pro"
-    "con con";
+    "con con"
+    "foot foot";
 
 
 #aboutme {
@@ -56,4 +57,8 @@
 
 .contact {
     grid-area: con;
+}
+
+.footer {
+    grid-area: foot;
 }
