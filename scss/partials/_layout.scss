@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
-    "abt img"
+    "abt abt "
     "edu edu"
     "skills skills"
     "pro pro"
@@ -16,9 +16,9 @@
         grid-area: abt;
     }
 
-.me {
-        grid-area: img;
-    }
+.vision{
+    grid-area: vis;
+}
 
 .edu {
         grid-area: edu;

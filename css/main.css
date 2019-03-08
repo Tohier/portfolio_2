@@ -6,7 +6,9 @@ body {
   padding: 0;
   min-height: 62.5rem;
   font-family: 'Righteous', cursive;
-  padding-top: 100px; }
+  padding-top: 100px;
+  background-color: black;
+  color: white; }
 
 header {
   position: fixed;
@@ -21,10 +23,14 @@ header.scrolled {
   height: 100px;
   z-index: 99; }
 
+h2 {
+  text-decoration: underline solid white; }
+
 section#timeline {
   width: 80%;
   margin: 20px auto;
-  position: relative; }
+  position: relative;
+  z-index: -5; }
 
 section#timeline:before {
   content: '';
@@ -35,7 +41,7 @@ section#timeline:before {
   margin: 0 0 0 -1px;
   width: 2px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2); }
+  background: rgba(255, 255, 255, 0); }
 
 section#timeline article {
   width: 100%;
@@ -175,6 +181,12 @@ nav ul li a.active {
   background: white;
   color: #000000; }
 
+#aboutme {
+  text-align: center; }
+  #aboutme p {
+    padding-left: 20%;
+    padding-right: 20%; }
+
 section {
   padding-top: 100px;
   box-sizing: border-box; }
@@ -199,7 +211,7 @@ section {
   display: inline-block;
   background: linear-gradient(to right, black 50%, red 100%);
   margin: 10px;
-  color: #fff;
+  color: white;
   position: relative;
   cursor: pointer; }
 
@@ -212,7 +224,8 @@ section {
   font-size: 30px;
   line-height: 140px;
   z-index: 1;
-  background: #000000;
+  color: black;
+  background: #ffffff;
   transition: transform 0.6s; }
 
 .cont-method span {
@@ -245,6 +258,15 @@ section {
   bottom: 0;
   transform-origin: left top;
   transform: skewY(-2deg); }
+
+#skill-icons {
+  font-size: 10rem;
+  margin-top: 7%;
+  margin-left: 5%; }
+
+#skill-icons:hover {
+  transform: scale(1.2);
+  animation: rainbow infinite 1s ease-in-out; }
 
 header .logo {
   position: absolute;
@@ -306,9 +328,8 @@ img.me {
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background: linear-gradient(to right, black 50%, red 100%);
+  background: linear-gradient(to right, red 20%, white 100%);
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
   content: '';
@@ -374,15 +395,28 @@ img.me {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1; }
 
+#soon {
+  opacity: 0.5; }
+
+.projects {
+  padding-top: 15%; }
+
+@keyframes rainbow {
+  0% {
+    color: white; }
+  50% {
+    color: red; }
+  100% {
+    color: white; } }
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "abt img" "edu edu" "skills skills" "pro pro" "con con" "foot foot"; }
+  grid-template-areas: "abt abt " "edu edu" "skills skills" "pro pro" "con con" "foot foot"; }
   .container #aboutme {
     grid-area: abt; }
-  .container .me {
-    grid-area: img; }
+  .container .vision {
+    grid-area: vis; }
   .container .edu {
     grid-area: edu; }
   .container .edu-timeline {

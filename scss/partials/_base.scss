@@ -8,6 +8,8 @@ body {
     min-height: 62.5rem;
     font-family: 'Righteous', cursive;
     padding-top: 100px;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -25,12 +27,18 @@ header.scrolled {
     height: 100px;
     z-index: 99;
 }
+
+h2 {
+  text-decoration: underline solid white;
+}
+
 // timeline code
 
 section#timeline {
   width: 80%;
   margin: 20px auto;
   position: relative;
+  z-index: -5;
 }
 section#timeline:before {
   content: '';
@@ -41,7 +49,7 @@ section#timeline:before {
   margin: 0 0 0 -1px;
   width: 2px;
   height: 100%;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0);
 }
 section#timeline article {
   width: 100%;
