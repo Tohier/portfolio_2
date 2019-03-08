@@ -1,9 +1,9 @@
 .container {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
     "abt abt "
     "edu edu"
     "skills skills"
@@ -11,54 +11,53 @@
     "con con"
     "foot foot";
 
+  #aboutme {
+    grid-area: abt;
+  }
 
-#aboutme {
-        grid-area: abt;
-    }
-
-.vision{
+  .vision {
     grid-area: vis;
-}
+  }
 
-.edu {
-        grid-area: edu;
-    }
-.edu-timeline {
-        grid-area: etl;
-    }
-.skills {
-        grid-area: skills;
-    }
+  .edu {
+    grid-area: edu;
+  }
+  .edu-timeline {
+    grid-area: etl;
+  }
+  .skills {
+    grid-area: skills;
+  }
 
-.pro {
+  .pro {
     grid-area: pro;
 
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "txt txt txt" 
-    "img1 img2 img3";
+      "txt txt txt"
+      "img1 img2 img3";
 
-.text-intro {
-        grid-area: txt;
+    .text-intro {
+      grid-area: txt;
     }
 
-.project1 {
-        grid-area: img1;
+    .project1 {
+      grid-area: img1;
     }
-.project2 {
-        grid-area: img2;
+    .project2 {
+      grid-area: img2;
     }
-.project3 {
-        grid-area: img3;
+    .project3 {
+      grid-area: img3;
     }
-    }
+  }
 }
 
 .contact {
-    grid-area: con;
+  grid-area: con;
 }
 
 .footer {
-    grid-area: foot;
+  grid-area: foot;
 }

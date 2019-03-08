@@ -193,10 +193,10 @@ section {
   section h2 {
     margin: 0;
     padding: 0;
-    font-size: 48px;
+    font-size: 200%;
     text-align: center; }
   section p {
-    font-size: 18px; }
+    font-size: 100%; }
 
 .cont-container {
   position: relative;
@@ -426,7 +426,7 @@ img.me {
   .container .pro {
     grid-area: pro;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "txt txt txt" "img1 img2 img3"; }
     .container .pro .text-intro {
       grid-area: txt; }
