@@ -36,20 +36,25 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "txt txt txt"
-      "img1 img2 img3";
+      "project1 project2 project3";
 
     .text-intro {
       grid-area: txt;
     }
 
     .project1 {
-      grid-area: img1;
+      grid-area: project1;
     }
     .project2 {
-      grid-area: img2;
+      grid-area: project2;
     }
     .project3 {
-      grid-area: img3;
+      grid-area: project3;
+      
+    }
+    .projects {
+      display: grid;
+      place-items: center;
     }
   }
 }

@@ -1,1 +1,102 @@
-        
+// responsiveness for tablet
+@media (max-width: 633px) {
+  nav ul {
+    position: relative;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: 1s;
+    width: 30rem;
+    font-size: 89%;
+}
+section#timeline article div.inner {
+    width: 100%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+    margin-top: 20%;
+}
+ .pro {
+    grid-area: pro;
+
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "txt"
+      "project1"
+      "project2" 
+      "project3" !important;
+ }
+}
+@media (max-width: 611px) {
+    nav ul {
+    position: relative;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: 1s;
+    width: 27rem;
+    font-size: 70%;
+}
+section#timeline article div.inner {
+    width: 100%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+    margin-top: 20%;
+}
+.pro {
+    grid-area: pro;
+
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "txt"
+      "project1"
+      "project2" 
+      "project3" !important;
+ }
+}
+@media (max-width: 564px) {
+    nav ul {
+    position: relative;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: 1s;
+    width: 25rem;
+    font-size: 70%;
+}
+section#timeline article div.inner {
+    width: 100%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+    margin-top: 20%;
+}
+#skill-icons {
+    font-size: 8rem;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+.pro {
+    grid-area: pro;
+
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "txt"
+      "project1"
+      "project2" 
+      "project3" !important;
+ }
+}
