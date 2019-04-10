@@ -1,5 +1,6 @@
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
   margin: 0;
@@ -490,7 +491,7 @@ img.me {
     display: grid;
     grid-template-columns: 1fr !important;
     grid-template-areas: "txt" "project1" "project2" "project3" !important; } }
-@media (max-width: 533px) {
+@media (max-width: 523px) {
   nav ul {
     position: relative;
     margin: 0;
@@ -502,9 +503,17 @@ img.me {
     transition: 1s;
     width: 24.5rem;
     font-size: 70%; } }
+@media (max-width: 413px) {
+  header.scrolled .logo img {
+    display: none !important; }
+
+  #skill-icons {
+    font-size: 6rem;
+    margin-top: 7%;
+    margin-left: 5%; } }
 @media (max-width: 320px) {
   header.scrolled .logo img {
-    display: none; }
+    display: none !important; }
 
   nav ul {
     position: relative;
