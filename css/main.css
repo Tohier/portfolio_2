@@ -525,7 +525,11 @@ img.me {
   #skill-icons {
     font-size: 6rem;
     margin-top: 7%;
-    margin-left: 5%; } }
+    margin-left: 5%; }
+
+  .projects div {
+    height: 15rem;
+    width: auto; } }
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
