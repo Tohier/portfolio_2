@@ -1,4 +1,6 @@
-// responsiveness for tablet
+// responsiveness 
+
+
 @media (max-width: 633px) {
   nav ul {
     position: relative;
@@ -100,3 +102,62 @@ section#timeline article div.inner {
       "project3" !important;
  }
 }
+
+@media (max-width: 533px) {
+    nav ul {
+    position: relative;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: 1s;
+    width: 24.5rem;
+    font-size: 70%;
+    
+}
+}
+
+@media (max-width: 320px) {
+    header.scrolled .logo img {
+    display: none;
+}
+
+nav ul {
+    position: relative;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: 1s;
+    width: 20rem;
+    font-size: 47%;
+}
+
+nav ul li a:hover {
+    display: none;
+    font-size: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: ease-in 250ms;
+}
+
+section#timeline article div.inner {
+    width: 100%;
+    float: left;
+    margin: 5px 0 0 0;
+        margin-top: 5px;
+    border-radius: 6px;
+    margin-top: 29%;
+}
+
+#skill-icons {
+    font-size: 5rem;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+}
+
