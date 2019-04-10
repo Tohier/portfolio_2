@@ -503,36 +503,16 @@ img.me {
     transition: 1s;
     width: 24.5rem;
     font-size: 70%; } }
-@media (max-width: 413px) {
-  header.scrolled .logo img {
-    display: none !important; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  html {
+    overflow-x: hidden; }
 
-  #skill-icons {
-    font-size: 6rem;
-    margin-top: 7%;
-    margin-left: 5%; } }
-@media (max-width: 320px) {
-  header.scrolled .logo img {
-    display: none !important; }
+  nav {
+    display: none; }
 
-  nav ul {
-    position: relative;
-    margin: 0;
-    padding: 40px 0;
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(100px);
-    transition: 1s;
-    width: 20rem;
-    font-size: 47%; }
-
-  nav ul li a:hover {
-    display: none;
-    font-size: 20px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    transition: ease-in 250ms; }
+  header .logo img {
+    width: 124%;
+    transition: 1s; }
 
   section#timeline article div.inner {
     width: 100%;
@@ -540,10 +520,10 @@ img.me {
     margin: 5px 0 0 0;
     margin-top: 5px;
     border-radius: 6px;
-    margin-top: 29%; }
+    margin-top: 26%; }
 
   #skill-icons {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-top: 7%;
     margin-left: 5%; } }
 .container {
