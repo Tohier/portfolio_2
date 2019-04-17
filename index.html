@@ -14,12 +14,13 @@
         <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 </head>
 <body>
     
     <header>
         <img src="images/mo.jpg" class="banner">
+        
         <a href="#" class="logo"><img src="images/b5ff3044-a6f4-4a62-a5ad-a15315fc0d6d.png"></a>
         <nav>
             <ul>
@@ -32,11 +33,12 @@
             </ul>
         </nav>
     </header>
+    
 
     <!-- the the jquery for the nav bar -->
     <script>$(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll > 0){
+        if (scroll > 10){
             $("header").addClass('scrolled');
         }
         else{
