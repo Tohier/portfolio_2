@@ -1,0 +1,172 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <img src="images/mo.jpg" class="banner">
+        
+        <a href="#" class="logo"><img src="images/b5ff3044-a6f4-4a62-a5ad-a15315fc0d6d.png"></a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#ski">Skills</a></li>
+                <li><a href="#pro">Projects</a></li>
+                <li><a href="#con">Contact</a></li>
+                <li><a href="images/TohierCV.docx">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- the the jquery for the nav bar -->
+    <script>$(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 10){
+            $("header").addClass('scrolled');
+        }
+        else{
+            $("header").removeClass('scrolled');
+        }
+        
+    } )
+    </script>
+    <!-- end of the jquery -->
+    
+    <div class="container">
+    <section id="aboutme">
+        <h2 class="about" style="padding-bottom: 2%"; >About me</h2>
+            
+            <p>My name is Tohier Dreyer and i'm an aspiring Junior Web Developer.</p>
+            <p>I have a passion for coding and for learning new things.</p>
+            <p>I hope that one day I can become a Game Developer.</p>
+
+    </section>
+
+     <section class="edu" id="education">
+         <h2>Education & Experience</h2>
+        <section id="timeline">
+            <article>
+                <div class="inner">
+                    <span class="date">
+                        <span class="day">12<sup>th</sup></span>
+                        <span class="month">April</span>
+                        <span class="year">2019</span>
+                    </span>
+                    <h2>Life Choices</h2>
+                    <p>I completed a 6 months coding course at Life Choices. I learned html, css and javascript. They also thought me valuable life skills as well as professional development.</p>
+                </div>
+            </article>
+            <article>
+                <div class="inner">
+                    <span class="date"> 
+                        <span class="month" style="font-size: 13px; padding-top: 8px;">Sep-Feb</span>
+                        <span class="year">2019-2020</span>
+                    </span>
+                    <h2>Digi Outsource</h2>
+                    <p>At Digi Outsource I worked quite a bit on business improvement processes. Most of my time was spent on Forms and workflows. Within the context of SharePoint, I developed quite a bit of 
+                    custom forms and sites.
+                    Within Microsoft Power Platform I mainly focused on PowerApps and Power Automate. By using PowerApps I developed responsive mobile and tablet applications. Power Automate was used for notifications or for different levels of approvals depending on the needs of the client.
+                 </p>
+                </div>
+            </article>
+          
+            <article>
+        </section>
+    </section>
+    
+    <section class="skills" id="ski">
+        <h2>Skills</h2>
+            <i class="fab fa-html5" id="skill-icons"></i>
+            <i class="fab fa-css3-alt" id="skill-icons"></i>
+            <i class="fab fa-sass" id="skill-icons"></i>
+            <i class="fab fa-js-square" id="skill-icons"></i>
+            <i class="fab fa-node" id="skill-icons"></i>
+            <i class="fab fa-github-alt" id="skill-icons"></i>
+            
+    </section>  
+    
+    <section class="pro" id="pro">
+        <div class="text-intro">
+            <h2>Projects</h2>  
+        </div>    
+    
+            <div class="projects project1"><figure class="fig">
+                <div><img src="images/trial.jpg" /></div>
+                <figcaption>
+                  <h3><a href="https://tohier.github.io/Outdoor-adventures/index.html" target="_blank">outdoor adventures</a></h3>
+                </figcaption>                
+                
+              </figure>
+            </div>
+       
+
+            <div class="projects project2"><figure class="fig hover">
+              <div><img src="images/handmade.png" /></div>
+                <figcaption>
+                  <h3><a href="https://tohier.github.io/handmade-shop/index.html" target="_blank">Handmade-Store</a></h3>
+                </figcaption>
+               
+            </div></figure>
+
+
+            <div class="projects project3"><figure class="fig">
+                <div><img src="images/goku-in-dragon-ball-super-anime-4k-rnc.jpg" alt=""></div>
+                <figcaption>
+                  <h3><a href="http://anime-blog-anime-blog.1d35.starter-us-east-1.openshiftapps.com/" target="_blank">Anime blog</a></h3>
+                </figcaption>   
+              </figure>
+            </div> 
+    </section>
+
+    <section class="contact" id="con">
+        <h2>Contact</h2>
+    <div>
+        <div class="cont-container">
+            <div class="cont-method">
+                <i class="fas fa-envelope"></i>
+                <span><a href="mailto:TohierDreyer17@gmail.com" style="color: white;">TohierDreyer17@gmail.com</a></span>
+            </div>
+            <div class="cont-method">
+                <i class="fas fa-mobile-alt"></i>
+                <span>0670772262</span>
+            </div>
+            <div class="cont-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Cape Town,South Africa</span>
+            </div>
+            <div class="cont-method">
+                <i class="fab fa-github"></i>
+                <span><a href="https://github.com/Tohier/" style="color: white;">https://github.com/Tohier/</a></span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <footer class="footer">
+        <p id="end">&copy;Designed by Tohier Dreyer.</p>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
